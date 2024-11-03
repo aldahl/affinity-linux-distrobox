@@ -90,8 +90,9 @@ exit
 ```
 
 ## Now back outside the distrobox in your host system:
-```
+```sh
 mkdir -p ~/.local/share/applications/
+# copy the desktop files from this repository (adapt the source path if needed)
 cp ~/Downloads/Photo.desktop ~/.local/share/applications/Photo.desktop
 cp ~/Downloads/Publisher.desktop ~/.local/share/applications/Publisher.desktop
 cp ~/Downloads/Designer.desktop ~/.local/share/applications/Designer.desktop
