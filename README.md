@@ -73,7 +73,8 @@ unzip ~/Downloads/WinMetadata.zip
 # now run the installers, replace with whatever version you have
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-designer-msi-2.4.2.exe 
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-photo-msi-2.4.2.exe 
-rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-publisher-msi-2.4.2.exe 
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-publisher-msi-2.4.2.exe
+# now check that the apps are running properly when called via rum, also sign in to activate your license seat
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine "$HOME/.wineAffinity/drive_c/Program Files/Affinity/Designer 2/Designer.exe"
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine "$HOME/.wineAffinity/drive_c/Program Files/Affinity/Publisher 2/Publisher.exe"
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine "$HOME/.wineAffinity/drive_c/Program Files/Affinity/Photo 2/Photo.exe"
@@ -84,6 +85,7 @@ wget https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Affinity_Designer
 wget https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Affinity_Photo_V2_icon.svg/512px-Affinity_Photo_V2_icon.svg.png -O ~/.local/share/icons/Photo2.png
 wget https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Affinity_Publisher_V2_icon.svg/512px-Affinity_Publisher_V2_icon.svg.png -O ~/.local/share/icons/Publisher2.png
 
+# exit the distrobox container
 exit
 ```
 
