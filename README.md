@@ -15,6 +15,10 @@ which is used for the special Wine build, so check the forum and official docs a
 
 ## Create an arch distrobox (replace dnf with whatever your distro uses as a package manager)
 ```sh
+# if you are on a RedHat family distro like Fedora or Nobara podman is usually the better solution as container runtime,
+# for some other distros docker might be better, so check what is recommended for your distribution and what ships in their
+# package repositories
+sudo dnf install podman
 sudo dnf install distrobox
 distrobox create -n arch -i archlinux
 distrobox enter arch
