@@ -70,10 +70,10 @@ cd WinMetadata/
 # they are not part of this repo for legal reasons
 unzip ~/Downloads/WinMetadata.zip 
 
-# now run the installers, replace with whatever version you have
-rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-designer-msi-2.4.2.exe 
-rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-photo-msi-2.4.2.exe 
-rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-publisher-msi-2.4.2.exe
+# now run the installers, replace with whatever version you have downloaded (use the msi-exe installers)
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-designer-msi-2.5.5.exe 
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-photo-msi-2.5.5.exe 
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-publisher-msi-2.5.5.exe
 # now check that the apps are running properly when called via rum, also sign in to activate your license seat
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine "$HOME/.wineAffinity/drive_c/Program Files/Affinity/Designer 2/Designer.exe"
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine "$HOME/.wineAffinity/drive_c/Program Files/Affinity/Publisher 2/Publisher.exe"
@@ -105,3 +105,14 @@ kbuildsycoca6
 On other desktop managers check how to refresh or simply do a reboot, that should always work.
 
 The apps should now show up normally in your start menu and you can pin them to the taskbar, desktop etc. .
+
+## Later: To update the apps
+```sh
+# download the msi-exe versions from https://store.serif.com/de/account/licences/
+# enter the box environment
+distrobox enter arch
+# run the installers like on first install, just with the new version
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-designer-msi-2.5.5.exe 
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-photo-msi-2.5.5.exe 
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine ~/Downloads/affinity-publisher-msi-2.5.5.exe
+```
