@@ -10,7 +10,7 @@ Sources used:
 - https://commons.wikimedia.org/wiki/File:Affinity_Photo_V2_icon.svg
 
 IMPORTANT: Especially the branch name might evolve over time
-which is used for the special Wine build, so check the forum and official docs above. This is more a quick cookbook for myself. as I was missing a complete guide that included distrobox and the icon/desktop file setup in one place.
+which is used for the special Wine build, so check the forum and official docs above. This is more a quick cookbook for myself, as I was missing a complete guide that included distrobox and the icon/desktop file setup in one place.
 
 
 ## Create an arch distrobox (replace dnf with whatever your distro uses as a package manager)
