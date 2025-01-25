@@ -60,7 +60,7 @@ sudo chown $USER:$USER /opt/wines
 cp --recursive "$HOME/Documents/ElementalWarrior-wine/wine-install" "/opt/wines/affinity-photo3-wine9.13-part3"
 ln -s /opt/wines/affinity-photo3-wine9.13-part3/bin/wine /opt/wines/affinity-photo3-wine9.13-part3/bin/wine64
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wineboot --init
-rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity winetricks --unattended dotnet48 corefonts
+rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity winetricks --unattended dotnet48 vcrun2022 corefonts
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity wine winecfg -v win11
 rum affinity-photo3-wine9.13-part3 $HOME/.wineAffinity winetricks renderer=vulkan
 # now set 144dpi in GUI in case of high resolution screen, otherwise you can skip this winecfg step
